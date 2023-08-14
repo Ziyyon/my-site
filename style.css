@@ -7,7 +7,7 @@
 
 nav{
     height: 80px;
-    background: #20297a;
+    background: #1c235a;
     display: flex;
     justify-content: space-between;
     align-items: centre;
@@ -33,7 +33,7 @@ nav a:hover{
 }
 
 .hero{
-    background: #20297a;
+    background: #1c235a;
 }
 
 .hero-container{
@@ -67,7 +67,7 @@ button{
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
-    color: #20297a;
+    color: #1c235a;
     background: #000;
     cursor: pointer;
     border-radius: 50px;
