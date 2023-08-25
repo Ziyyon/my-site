@@ -54,6 +54,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .home-image {
     display: flex;
     justify-content: center;
@@ -64,7 +65,16 @@
     border-radius: 50%;
     border: 25px solid #fff;
     outline: 25px solid #031540;
+    overflow: hidden; 
 }
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 .home-image code {
     position: relative;
