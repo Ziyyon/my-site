@@ -164,6 +164,20 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .navbar a {
+        margin: 10px 0; 
+    }
     .home {
         flex-direction: column;
         text-align: center; 
