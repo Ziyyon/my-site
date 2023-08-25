@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -53,6 +53,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 80px;
 }
 
 .home-image {
