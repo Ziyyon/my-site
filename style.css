@@ -59,8 +59,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 50vw; 
+    height: 50vw; 
     background: #031540;
     border-radius: 50%;
     border: 25px solid #fff;
@@ -68,11 +68,14 @@
     overflow: hidden;
 }
 
+
 .home-image img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    object-fit: cover;
 }
+
 
 
 .home-image code {
