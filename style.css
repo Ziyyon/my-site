@@ -63,7 +63,7 @@
     height: 500px; 
     background: #031540;
     border-radius: 50%;
-    border: 10px solid #fff;
+    border: 5px solid #fff;
     outline: 10px solid #031540;
     overflow: hidden;
 }
