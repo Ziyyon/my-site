@@ -65,14 +65,14 @@
     border-radius: 50%;
     border: 25px solid #fff;
     outline: 25px solid #031540;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .home-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
