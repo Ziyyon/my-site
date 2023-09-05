@@ -16,7 +16,7 @@ Copy code
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
     background: #fff; /* Set background color to white */
     display: flex;
     justify-content: space-between;
