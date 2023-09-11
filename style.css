@@ -15,7 +15,7 @@ Copy code
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 98%;
     padding: 10px;
     background: #fff; /* Set background color to white */
     display: flex;
@@ -59,7 +59,7 @@ Copy code
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 
 /* Home image styles */
