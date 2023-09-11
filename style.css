@@ -15,9 +15,9 @@ Copy code
     position: fixed;
     top: 0;
     left: 0;
-    width: 98%;
-    padding: 10px;
-    background: #fff; /* Set background color to white */
+    width: 100%;
+    padding: 10px 0px;
+    background: #1b1a1b; /* Set background color to white */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,10 +26,10 @@ Copy code
 
 /* Logo styles */
 .logo {
-    font-size: 25px;
-    color: #031540;
+    font-size: 18px;
+    color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 70;
 }
 
 /* Navbar styles */
@@ -59,7 +59,7 @@ Copy code
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 250px;
+    margin-top: 0px;
 }
 
 /* Home image styles */
@@ -71,8 +71,8 @@ Copy code
     height: 500px; 
     background: #031540;
     border-radius: 50%;
-    border: 5px solid #fff;
-    outline: 10px solid #031540;
+    border: 2px solid #fff;
+    outline: 7px solid #031540;
     overflow: hidden;
 }
 
@@ -171,7 +171,7 @@ Copy code
     box-shadow: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 644px) {
     .header {
         padding: 10px;
     }
