@@ -45,7 +45,7 @@ code
     height: 500px;
     border-radius: 50%;
     overflow: hidden;
-    padding: 40px;
+    padding: 30px;
 }
 
 .home-image img {
@@ -69,7 +69,7 @@ code
 }
 
 .home-content h1 {
-    font-size: 60px;
+    font-size: 55px;
     line-height: 1.2;
     margin-top: -100px;
 }
