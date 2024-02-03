@@ -32,7 +32,7 @@ code
     padding: 0 10%;
     background-image: url('../assets/images/code.jpg');
     background-size: auto;
-    background-position: top;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -118,7 +118,7 @@ code
     display: inline-flex;
     justify-content: center;
     align-items:center;
-    width: 35px;
+    width: 40px;
     height: 50px;
     background: transparent;
     font-size: 30px;
