@@ -43,7 +43,7 @@ code
     border-radius: 50%;
     overflow: hidden;
     padding: 20px;
-    margin-top: -100px; /* Adjust as needed to center the image */
+    margin-top: -100px;
 }
 
 .home-image img {
@@ -64,7 +64,7 @@ code
     color: #fff;
     text-align: center;
     margin: auto;
-    margin-top: 20px; /* Add spacing between the image and text */
+    margin-top: 20px;
 }
 
 .home-content h1 {
@@ -185,7 +185,7 @@ code
     .home-image {
         width: 150px;
         height: 150px;
-        margin-top: 0; /* Adjust as needed */
+        margin-top: 0;
     }
 
     .home-content {
@@ -193,12 +193,12 @@ code
     }
 
     .home-content h1 {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .home-content h3 {
-
-    },
+        font-size: 35px;
+    }
     .home-content p,
     .home-content h4,
     .home-sci a {
