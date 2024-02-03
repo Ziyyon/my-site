@@ -30,7 +30,7 @@ code
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    background-image: url('code.jpg');
+    background-image: url('../assets/images/code.jpg');
     background-size: auto;
     background-position: top;
     background-repeat: no-repeat;
@@ -38,14 +38,12 @@ code
 
 /* Home image styles */
 .home-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 500px;
     height: 500px;
     border-radius: 50%;
     overflow: hidden;
     padding: 20px;
+    margin-top: -100px; /* Adjust as needed to center the image */
 }
 
 .home-image img {
@@ -66,12 +64,13 @@ code
     color: #fff;
     text-align: center;
     margin: auto;
+    margin-top: 20px; /* Add spacing between the image and text */
 }
 
 .home-content h1 {
     font-size: 55px;
     line-height: 1.2;
-    margin-top: -100px;
+    margin-bottom: 45px;
 }
 
 .home-content h3 {
@@ -84,6 +83,7 @@ code
     background-position: -410px 0;
     animation: animateText 6s linear infinite;
     margin-top: -40px;
+    margin-bottom: 30px;
 }
 
 @keyframes animateText {
@@ -105,13 +105,30 @@ code
 }
 
 .home-content h4 {
-    padding: 10px;
+    padding: 20px;
     font-size: 18px;
     font-weight: 500;
 }
 
+.home-stack {
+    margin: 0px 0 10px;
+}
+
+.home-stack a {
+    display: inline-flex;
+    justify-content: left;
+    align-items: left;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    font-size: 40px;
+    color: #00abf0;
+    text-decoration: none;
+    margin-left: 10px ;
+}
+
 .home-sci {
-    margin: 20px 0 40px;
+    margin: 0px 0 40px;
 }
 
 .home-sci a {
@@ -154,29 +171,10 @@ code
     box-shadow: none;
 }
 
-.btn1 {
-    padding: 12px 55px;
-    background: #00abf0;
-    border-radius: 20px;
-    font-size: 17px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    box-shadow: 0 0 10px #00abf0;
-    transition: .5s;
-    margin: 10px;
-}
-
-.btn:hover1 {
-    box-shadow: none;
-}
-
 @media (max-width: 786px) {
     .header {
         padding: 10px;
     }
-
 
     .home {
         flex-direction: column;
@@ -187,9 +185,23 @@ code
     .home-image {
         width: 150px;
         height: 150px;
+        margin-top: 0; /* Adjust as needed */
     }
 
     .home-content {
-        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+    }
+
+    .home-content h3 {
+
+    },
+    .home-content p,
+    .home-content h4,
+    .home-sci a {
+        font-size: 16px;
     }
 }
