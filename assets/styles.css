@@ -356,7 +356,7 @@ display: block; /* Ensure the entire image is clickable */
     }
 
     .about {
-        margin-top: -20px;
+        margin-top: -10px;
         padding: 15px;
     }
 
@@ -366,13 +366,13 @@ display: block; /* Ensure the entire image is clickable */
     }
 
     .projects {
-        margin-top: -20px;
+        margin-top: -10px;
         margin-bottom: 100px;
         padding: 15px;
     }
 
     .contacts {
-        margin-top: -20px;
+        margin-top: -10px;
         padding: 15px;
         margin-bottom: 150px;
     }
