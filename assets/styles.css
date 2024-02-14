@@ -343,16 +343,16 @@ display: block; /* Ensure the entire image is clickable */
 
     .home-content h1 {
         font-size: 40px;
-        margin-top: 50px;
+        margin-top: -20px;
     }
 
     .home-content h3 {
         font-size: 35px;
-        margin-top: 65px;
+        margin-top: -20px;
     }
 
     .home-content h4 {
-        margin-top: -350px;
+        margin-top: 0px;
     }
 
     .about {
