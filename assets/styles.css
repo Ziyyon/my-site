@@ -320,6 +320,7 @@ display: block; /* Ensure the entire image is clickable */
         border-radius: 50%;
         overflow: hidden;
         margin: 50px;
+        margin-top: 100px;
     }
     
     .home-image img {
