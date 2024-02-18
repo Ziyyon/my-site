@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 </head>
-
 <body>
     <header>
         <div id="hamburger">&#9776;</div>
@@ -28,7 +26,6 @@
     <section id="contacts" class="contacts">
         <h1>CONTACTS</h1>
         <h4>Call: 076 348 3713</h4>
-        <h4>Email: thaborasethaba@gmail.com</h4>
         <button id="copyEmailBtn">Copy Email</button>
 
         <div class="home-sci">
@@ -39,14 +36,14 @@
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
             <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
-        <button type="submit">Send Message</button>
 
+        <input type="hidden" id="hiddenEmailAddress" value="thaborasethaba@gmail.com">
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/scripts.js"></script>
 
 </body>
-
 </html>

@@ -31,18 +31,35 @@ contactsLink.addEventListener('click', () => {
 window.location.href = 'contacts.html';
 });
 
-//     // Smooth scrolling navigation
-//     document.querySelectorAll('nav li').forEach(navItem => {
-//         navItem.addEventListener('click', function() {
-//             const sectionId = this.getAttribute('data-section');
-//             const section = document.getElementById(sectionId);
-//             section.scrollIntoView({
-//                 behavior: 'smooth'
-//             });
-//             // Close navigation menu on smaller screens
-//             if (window.innerWidth <= 768) {
-//                 navUl.classList.remove('active');
-//             }
-//         });
-//     });
-// });
+document.getElementById('copyEmailBtn').addEventListener('click', function() {
+    var emailAddress = document.getElementById('hiddenEmailAddress').value;
+
+    var tempInput = document.createElement('input');
+    tempInput.value = emailAddress;
+    document.body.appendChild(tempInput);
+
+    tempInput.select();
+    document.execCommand('copy');
+
+    document.body.removeChild(tempInput);
+
+    alert('Email copied: ' + emailAddress);
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+
+    alert('Message sent!');
+});
