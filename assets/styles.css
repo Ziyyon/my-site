@@ -1,13 +1,13 @@
-css
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* Import Playfair Display font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-/* Apply styles to all elements */
+/* Apply Playfair Display font to all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
+
+
+
 
 nav {
     position: relative;
@@ -22,6 +22,7 @@ nav {
     font-family: 'Arial';
     font-weight: lighter;
     padding: 5px;
+    margin-bottom: 0;
 }
 
 nav ul {
@@ -29,6 +30,7 @@ nav ul {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-top: 0;
 }
 
 nav li {
@@ -81,8 +83,8 @@ header {
 
 /* Home image styles */
 .home-image {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     overflow: hidden;
     padding: 0px;
@@ -317,8 +319,8 @@ display: block; /* Ensure the entire image is clickable */
     }
 
     .home-image {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
         overflow: hidden;
         margin: 50px;
@@ -383,6 +385,10 @@ display: block; /* Ensure the entire image is clickable */
         font-size: 15px;
     }
 
+    nav {
+        margin-bottom: 0;
+    }
+
     nav ul {
         display: none;
         flex-direction: column;
@@ -391,6 +397,7 @@ display: block; /* Ensure the entire image is clickable */
         left: 0;
         background-color: #111111;
         width: 50%;
+        margin-top: 0;
     }
 
     /* Hamburger Icon */
