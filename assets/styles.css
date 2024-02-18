@@ -6,9 +6,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-
-
-
 nav {
     position: relative;
     top: 0;
@@ -152,12 +149,6 @@ h4 {
     }
 }
 
-/* .home-content p {
-    font-size: 18px;
-    margin-top: 0px;
-    font-weight: 500;
-} */
-
 .about {
     padding: 0px;
     font-size: 18px;
@@ -179,6 +170,11 @@ h4 {
     margin: auto;
     margin-top: 60px;
 }
+
+#locked-image img {
+    opacity: 0.5;
+}
+
 
 .contacts {
     padding: 0px;
@@ -397,7 +393,7 @@ display: block; /* Ensure the entire image is clickable */
         left: 0;
         background-color: #111111;
         width: 50%;
-        margin-top: 0;
+        margin-top: -40px;
     }
 
     /* Hamburger Icon */

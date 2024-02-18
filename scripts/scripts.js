@@ -1,34 +1,35 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     const menuIcon = document.getElementById('hamburger');
-//     const navUl = document.querySelector('nav ul');
+const menuIcon = document.getElementById('hamburger');
+const navUl = document.querySelector('nav ul');
+const aboutLink = document.getElementById('about');
+const homeLink = document.getElementById('home');
+const projectsLink = document.getElementById('projects');
+const contactsLink = document.getElementById('contacts');
 
-//     menuIcon.addEventListener('click', () => {
-//         navUl.classList.toggle('active');
-//     });
+menuIcon.addEventListener('click', () => {
+    navUl.classList.toggle('active');
+});
 
-//     // Hide navigation menu items when hamburger menu is clicked
-//     navUl.addEventListener('click', () => {
-//         if (window.innerWidth <= 768) {
-//             navUl.classList.remove('active');
-//         }
-//     });
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        navUl.classList.remove('active');
+    }
+});
 
-//     window.addEventListener('resize', () => {
-//         if (window.innerWidth > 768) {
-//             navUl.classList.remove('active');
-//             // Ensure navigation menu items are shown on larger screens
-//             document.querySelectorAll('nav li').forEach(navItem => {
-//                 navItem.classList.remove('nav-hidden');
-//             });
-//         } else {
-//             // Hide navigation menu items on smaller screens if hamburger menu is not active
-//             if (!navUl.classList.contains('active')) {
-//                 document.querySelectorAll('nav li').forEach(navItem => {
-//                     navItem.classList.add('nav-hidden');
-//                 });
-//             }
-//         }
-//     });
+aboutLink.addEventListener('click', () => {
+window.location.href = 'about.html';
+});
+
+homeLink.addEventListener('click', () => {
+window.location.href = 'index.html';
+});
+
+projectsLink.addEventListener('click', () => {
+window.location.href = 'projects.html';
+});
+
+contactsLink.addEventListener('click', () => {
+window.location.href = 'contacts.html';
+});
 
 //     // Smooth scrolling navigation
 //     document.querySelectorAll('nav li').forEach(navItem => {
