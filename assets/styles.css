@@ -291,15 +291,15 @@ display: block; /* Ensure the entire image is clickable */
     box-shadow: none;
 }
 
-#contactForm {
+.form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
 }
 
-#contactForm input[type="text"],
-#contactForm input[type="email"],
-#contactForm textarea {
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -309,7 +309,7 @@ display: block; /* Ensure the entire image is clickable */
 
 }
 
-#contactForm textarea {
+.form textarea {
     resize: vertical;
 }
 
