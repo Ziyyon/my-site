@@ -1,70 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thabo Rasethaba | Portfolio Website</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Thabo Rasethaba</title>
+<link rel="stylesheet" href="assets/styles.css">
 </head>
-
 <body>
-    <header>
-        <div id="hamburger">&#9776;</div>
-    </header>
+<header class="site-header">
+<a href="index.html" class="logo">TR</a>
+<button id="hamburger">☰</button>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html" class="active-link">Projects</a></li>
+<li><a href="contacts.html">Contacts</a></li>
+</ul>
+</nav>
+</header>
 
-    <nav>
-        <ul>
-            <li id="home">Home</li>
-            <li id="about">About</li>
-            <li id="projects">Projects</li>
-            <li id="contacts">Contacts</li>
-        </ul>
-    </nav>
+<main class="page-shell">
+<section class="page-hero narrow">
+<h1>Selected Projects</h1>
+<p>Here are some of the things I’ve built recently.</p>
+</section>
 
-    <section id="projects" class="projects">
-        <h1>PROJECTS</h1>
+<section class="projects-grid">
+<a class="project-card" href="https://github.com/Ziyyon/my-site" target="_blank">
+<img src="assets/images/website.png" alt="Website">
+<h3>Portfolio Website</h3>
+</a>
 
-        <div class="project">
-            <a href="https://github.com/Ziyyon/my-site" target="_blank">
-                <img src="assets/images/website.png" alt="Portfolio Website">
-            </a>
-            <h4>Website</h4>
+<a class="project-card" href="https://github.com/Ziyyon/screen-recorder" target="_blank">
+<img src="assets/images/Screen-Recorder.png" alt="Screen Recorder">
+<h3>Screen Recorder</h3>
+</a>
 
-            <a href="https://github.com/Ziyyon/screen-recorder" target="_blank">
-                <img src="assets/images/Screen-Recorder.png" alt="Screen Recorder">
-            </a>
-            <h4>Screen Recorder</h4>
+<a class="project-card" href="https://github.com/Ziyyon/todo-list" target="_blank">
+<img src="assets/images/To-Do-List.png" alt="To-Do List">
+<h3>To-Do App</h3>
+</a>
 
-            <a href="https://github.com/Ziyyon/todo-list" target="_blank">
-                <img src="assets/images/To-Do-List.png" alt="To-Do List">
-            </a>
-            <h4>To-Do List</h4>
+<a class="project-card" href="https://github.com/Ziyyon/Pong-Game" target="_blank">
+<img src="assets/images/pong.png" alt="Pong Game">
+<h3>Pong Game</h3>
+</a>
 
-            <a href="https://github.com/Ziyyon/Pong-Game" target="_blank">
-                <img src="assets/images/pong.png" alt="Pong Game">
-            </a>
-            <h4>Pong Game</h4>
-
-            <a href="https://github.com/Ziyyon/news-site-rpa-automation" target="_blank">
-                <img src="assets/images/web-scraper.png" alt="Web Scraper">
-            </a>
-            <h4>Web Scraper</h4>
-            
-            <a href="" target="_blank" id="locked-image">
-                <img src="assets/images/locked.png" alt="Locked Projects">
-            </a>
-            <h4>More Projects Coming Soon...</h4>
-        </div>
-
-    </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/scripts.js"></script>
-
+<a class="project-card" href="https://github.com/Ziyyon/news-site-rpa-automation" target="_blank">
+<img src="assets/images/web-scraper.png" alt="Web Scraper">
+<h3>Web Scraper</h3>
+</a>
+</section>
+</main>
+<script src="scripts/scripts.js"></script>
 </body>
-
 </html>
