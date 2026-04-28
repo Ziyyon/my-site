@@ -1,9 +1,5 @@
 const menuIcon = document.getElementById('hamburger');
 const navUl = document.querySelector('nav ul');
-const aboutLink = document.getElementById('about');
-const homeLink = document.getElementById('home');
-const projectsLink = document.getElementById('projects');
-const contactsLink = document.getElementById('contacts');
 
 menuIcon.addEventListener('click', () => {
     navUl.classList.toggle('active');
@@ -15,51 +11,33 @@ window.addEventListener('resize', () => {
     }
 });
 
-aboutLink.addEventListener('click', () => {
-window.location.href = 'about.html';
-});
+// CONTACT FORM (AJAX - stay on page)
+const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
 
-homeLink.addEventListener('click', () => {
-window.location.href = 'index.html';
-});
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
 
-projectsLink.addEventListener('click', () => {
-window.location.href = 'projects.html';
-});
+        const formData = new FormData(form);
 
-contactsLink.addEventListener('click', () => {
-window.location.href = 'contacts.html';
-});
-
-document.getElementById('copyEmailBtn').addEventListener('click', function() {
-    var emailAddress = document.getElementById('hiddenEmailAddress').value;
-
-    var tempInput = document.createElement('input');
-    tempInput.value = emailAddress;
-    document.body.appendChild(tempInput);
-
-    tempInput.select();
-    document.execCommand('copy');
-
-    document.body.removeChild(tempInput);
-
-    alert('Email copied: ' + emailAddress);
-});
-
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
-
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('message').value = '';
-
-    alert('Message sent!');
-});
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                status.innerHTML = "✅ Message sent successfully!";
+                form.reset();
+            } else {
+                status.innerHTML = "❌ Something went wrong. Please try again.";
+            }
+        })
+        .catch(() => {
+            status.innerHTML = "❌ Network error. Please try again.";
+        });
+    });
+}
