@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thabo Rasethaba | Portfolio Website</title>
+    <title>About | Thabo Rasethaba</title>
     <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
-
 <body>
-    <header>
-        <div id="hamburger">&#9776;</div>
+    <header class="site-header">
+        <a href="index.html" class="logo">TR</a>
+        <button id="hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active-link">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li id="home">Home</li>
-            <li id="about">About</li>
-            <li id="projects">Projects</li>
-            <li id="contacts">Contacts</li>
-        </ul>
-    </nav>
+    <main class="page-shell">
+        <section class="page-hero narrow">
+            <p class="eyebrow">About me</p>
+            <h1>Building useful digital products with clean code and clear design.</h1>
+            <p>I am a software developer focused on practical web experiences, responsive layouts, and reliable user journeys. My background includes Python, Java, JavaScript, Flutter, HTML, CSS, SQL, Git, and full-stack project work.</p>
+        </section>
 
-    <section id="about" class="about">
-        <h1>ABOUT</h1>
-        <h4>I am a passionate and ambitious software developer with a strong foundation in various programming languages and technologies. My journey into software development has been driven by a deep curiosity and eagerness to explore innovative solutions to complex problems.</h4>
-        <div class="home-stack">
-            <a href="#"><i class='bx bxl-python'></i></a>
-            <a href="#"><i class='bx bxl-java'></i></a>
-            <a href="#"><i class='bx bxl-flutter'></i></a>
-            <a href="#"><i class='bx bxl-javascript'></i></a>
-            <a href="#"><i class='bx bxl-git'></i></a>
-        </div>
-        <p>Python | Java | Flutter | JS | Git</p>
-        <h4>My proficiency extends across various programming languages, allowing me to develop robust solutions. From the versatility of Python and Java to the dynamic nature of web development with HTML, CSS and JavaScript, as well as the exciting possibilities of cross-platform mobile development with Flutter, I am well-versed in the tools that drive innovation.
-            
-            Driven by a genuine passion for innovation, I am eager to contribute my skills to meaningful projects that make a positive impact.
-        </h4>
-        <h4>Please download my resume to learn more about me.</h4>
+        <section class="content-grid">
+            <article class="glass-card large-card">
+                <h2>My approach</h2>
+                <p>I enjoy solving problems by turning rough ideas into structured, usable products. I care about simple interfaces, readable code, and projects that are easy to improve over time.</p>
+                <p>My journey into software development has been driven by curiosity, discipline, and a desire to build meaningful tools that people can actually use.</p>
+                <a href="documents/Thabo_Rasethaba_-_Software_Developer - Resume.pdf" download class="btn">Download Resume</a>
+            </article>
 
-        <a href="documents/Thabo_Rasethaba_-_Software_Developer - Resume.pdf" download="Thabo_Rasethaba_-_Software_Developer - Resume.pdf" class="btn">Download Resume</a>
-
-    </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <aside class="glass-card">
+                <h2>Core stack</h2>
+                <div class="skill-cloud">
+                    <span>Python</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Flutter</span><span>SQL</span><span>Git</span>
+                </div>
+            </aside>
+        </section>
+    </main>
     <script src="scripts/scripts.js"></script>
-
 </body>
-
 </html>
