@@ -53,6 +53,9 @@ main { position: relative; z-index: 1; }
 .hero-copy, .page-hero p, .glass-card p, .project-body p, .featured-copy p { color: var(--muted); font-size: 17px; }
 .hero-copy { max-width: 560px; line-height: 1.7; animation: fadeUp .65s ease .32s both; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; animation: fadeUp .65s ease .40s both; }
+.social-links { display: flex; align-items: center; gap: 12px; margin-top: 22px; animation: fadeUp .65s ease .44s both; }
+.social-links a { width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(56,189,248,.28); background: rgba(56,189,248,.08); color: var(--accent-2); text-decoration: none; font-size: 24px; box-shadow: 0 14px 34px rgba(0,0,0,.18); transition: transform .25s ease, border-color .25s ease, background .25s ease, box-shadow .25s ease, color .25s ease; }
+.social-links a:hover { transform: translateY(-3px); border-color: rgba(56,189,248,.6); background: rgba(56,189,248,.16); color: var(--text); box-shadow: 0 18px 42px rgba(56,189,248,.18); }
 .trust-strip { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; animation: fadeUp .65s ease .48s both; }
 .trust-strip span { color: var(--accent-2); border: 1px solid rgba(56,189,248,.2); background: rgba(56,189,248,.075); border-radius: 999px; padding: 7px 11px; font-size: 12px; font-weight: 800; transition: transform .25s ease, border-color .25s ease; }
 .trust-strip span:hover { transform: translateY(-2px); border-color: rgba(56,189,248,.45); }
@@ -111,7 +114,7 @@ main { position: relative; z-index: 1; }
     .hero, .content-grid, .featured-project, .elite-grid { grid-template-columns: 1fr; }
     .hero { text-align: center; gap: 34px; padding-top: 118px; padding-bottom: 64px; min-height: auto; }
     .home-image { justify-self: center; order: -1; width: min(250px,70vw); }
-    .hero-actions, .project-actions, .trust-strip { justify-content: center; }
+    .hero-actions, .project-actions, .trust-strip, .social-links { justify-content: center; }
     .projects-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
     .featured-media img { height: 260px; }
 }
