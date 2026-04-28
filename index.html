@@ -5,41 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thabo Rasethaba | Portfolio Website</title>
+    <title>Thabo Rasethaba | Software Developer</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 
 <body>
-    <header>
-        <div id="hamburger">&#9776;</div>
+    <header class="site-header">
+        <a href="index.html" class="logo">TR</a>
+        <button id="hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li id="home">Home</li>
-            <li id="about">About</li>
-            <li id="projects">Projects</li>
-            <li id="contacts">Contacts</li>
-        </ul>
-    </nav>
+    <main>
+        <section class="home hero" id="home">
+            <div class="home-content">
+                <p class="eyebrow">Hello World, I'm</p>
+                <h1>Thabo Rasethaba</h1>
+                <h3>Software Developer</h3>
+                <p class="hero-copy">
+                    I build clean, practical web experiences with a focus on thoughtful design,
+                    responsive layouts, and reliable user journeys.
+                </p>
 
-    <section id="home" class="home">
-        <div class="home-image">
-            <img src="assets/images/Thabo.jpg" alt="Thabo Rasethaba">
-        </div>
-        <div class="home-content">
-            <h4>Hello World,</h4>
-            <h4>I'm</h4>
-            <h1>Thabo Rasethaba</h1>
-            <h3>Software Developer</h3>
-        </div>
-    </section>
+                <div class="hero-actions">
+                    <a class="btn" href="projects.html">View Projects</a>
+                    <a class="btn secondary-btn" href="contacts.html">Contact Me</a>
+                </div>
+            </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <div class="home-image" aria-label="Portrait of Thabo Rasethaba">
+                <img src="assets/images/Thabo.jpg" alt="Thabo Rasethaba">
+            </div>
+        </section>
+    </main>
+
     <script src="scripts/scripts.js"></script>
-
 </body>
 
 </html>
